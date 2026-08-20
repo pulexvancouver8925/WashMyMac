@@ -56,12 +56,19 @@ Mac back when you hold a combination that a cloth cannot press.
 
 ## Install
 
-Grab the `.zip` from the [latest release](https://github.com/AppsGanin/WashMyMac/releases/latest),
-unzip it and drag `WashMyMac.app` into `/Applications`.
+Download the `.dmg` from the [latest release](https://github.com/AppsGanin/WashMyMac/releases/latest),
+open it and drag `WashMyMac.app` onto the `Applications` folder in the window.
 
 > [!NOTE]
-> The app is not signed with an Apple Developer certificate, so macOS blocks the first
-> open. Right-click the app → **Open** → **Open** again. One-time.
+> The app is ad-hoc signed rather than signed with an Apple Developer certificate, so macOS
+> refuses the first launch. On macOS 15 and newer, Control-click no longer bypasses that:
+> open the app once, let it be blocked, then go to **System Settings → Privacy & Security**
+> and press **Open Anyway**. One-time.
+
+> [!IMPORTANT]
+> Move it to `/Applications` *before* granting Accessibility. macOS ties that permission to
+> the app's path and code hash, so relocating the app afterwards silently revokes it — which
+> is exactly what happens if you run it once out of `~/Downloads`.
 
 The app lives in the menu bar and has no Dock icon. First time you start cleaning mode it
 will ask for Accessibility access — see [below](#accessibility-permission) for what changes
@@ -146,6 +153,7 @@ macOS limits, not missing features:
 ```bash
 ./build.sh --install          # → /Applications/WashMyMac.app
 ./build.sh                    # → .build/bundle/WashMyMac.app
+./tools/make-dmg.sh           # → dist/WashMyMac-v<version>.dmg
 ```
 
 Xcode or the Command Line Tools is the only requirement. The universal binary, the bundle,

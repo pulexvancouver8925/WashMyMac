@@ -33,15 +33,12 @@ jobs:
       - name: Build the app bundle
         run: ./build.sh
 
-      - name: Zip the app
-        run: |
-          ditto -c -k --keepParent \
-            .build/bundle/WashMyMac.app \
-            "WashMyMac-${{ needs.release-please.outputs.tag_name }}.zip"
+      - name: Pack the disk image
+        run: ./tools/make-dmg.sh
 
-      - name: Attach the app to the release
+      - name: Attach the disk image to the release
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           gh release upload "${{ needs.release-please.outputs.tag_name }}" \
-            WashMyMac-*.zip --clobber
+            dist/*.dmg --clobber
