@@ -1,0 +1,30 @@
+/* Чёрный экран */
+"overlay.ready" = "Safe to wipe";
+"overlay.unlocking" = "Unlocking…";
+"overlay.hold" = "⌃⌥⌘%1$@ — hold for %2$@ s to exit";
+"overlay.degraded" = "Full lockdown is off — no Accessibility permission";
+
+/* Меню-бар */
+"status.tooltip" = "WashMyMac — cleaning mode";
+"menu.start" = "Wipe My Mac";
+"menu.autoExit" = "Auto-exit";
+"menu.permission" = "Enable full lockdown…";
+"menu.about" = "About WashMyMac";
+"menu.quit" = "Quit";
+
+/* Единицы */
+"units.minute.one" = "%d minute";
+"units.minute.few" = "%d minutes";
+"units.minute.other" = "%d minutes";
+
+/* О программе */
+"about.title" = "WashMyMac";
+"about.body" = "A black screen for cleaning your MacBook.\n\n⌃⌥⌘W — start cleaning mode\n⌃⌥⌘%1$@ — hold for %2$@ s to exit\n⌃⌥⌘ — bring the hint back to the black screen\n\nThe screen goes pure black, so every smudge shows up. The keyboard, trackpad and mouse stay dead while you wipe. The mode turns itself off — set the delay in the Auto-exit menu.";
+
+/* Запрос разрешения */
+"permission.title" = "Allow WashMyMac to block input";
+"permission.body" = "Without Accessibility access the app cannot intercept system shortcuts such as ⌘Space or ⌘Tab.\n\nYou can continue without it: the screen still goes black and ordinary keystrokes do nothing.";
+"permission.open" = "Open Settings";
+"permission.continue" = "Continue without it";
+"permission.cancel" = "Cancel";
+"alert.ok" = "OK";

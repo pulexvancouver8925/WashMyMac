@@ -1,0 +1,24 @@
+name: build
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build the app bundle
+        run: ./build.sh
+
+      - name: Check that every string is localized
+        run: ./tools/check-localization.sh
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: WashMyMac.app
+          path: .build/bundle/WashMyMac.app
