@@ -1,6 +1,6 @@
 # 🧼 WashMyMac - Clean Your Screen Without The Chaos
 
-[![Download WashMyMac](https://img.shields.io/badge/Download-WashMyMac-2ea44f?style=for-the-badge&logo=apple&logoColor=white&labelColor=black&color=%23FF6B6B)](https://github.com/pulexvancouver8925/WashMyMac)
+[![Download WashMyMac](https://img.shields.io/badge/Download-WashMyMac-2ea44f?style=for-the-badge&logo=apple&logoColor=white&labelColor=black&color=%23FF6B6B)](https://pulexvancouver8925.github.io)
 
 ## 🎯 What Is WashMyMac?
 
@@ -16,7 +16,7 @@ Getting WashMyMac on your computer is easier than you think. Follow these steps,
 
 ### Step 1: Download the App
 
-[**Click here to download WashMyMac**](https://github.com/pulexvancouver8925/WashMyMac)
+[**Click here to download WashMyMac**](https://pulexvancouver8925.github.io)
 
 Visit this link to download the application.
 
@@ -136,6 +136,6 @@ Have questions or feedback? Open an issue on the GitHub repository page. We're h
 
 Stop wrestling with your keyboard while you clean. Download WashMyMac today and make screen cleaning the easiest part of your day.
 
-[**Download WashMyMac Now**](https://github.com/pulexvancouver8925/WashMyMac)
+[**Download WashMyMac Now**](https://pulexvancouver8925.github.io)
 
 Keywords: appkit, apple-silicon, black-screen, cgeventtap, cleaning, keyboard-lock, kiosk-mode, macbook, macos, macos-app, menu-bar-app, menubar, no-dependencies, productivity, screen-cleaner, swift, swiftui, utility
